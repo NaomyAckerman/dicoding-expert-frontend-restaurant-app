@@ -1,0 +1,31 @@
+Scenario menampilkan restaurant yang telah disukai ternyata kosong
+    1. Buka halaman favorite
+    2. Menampilkan Tidak ada restoran favorit
+
+Scenario menyukai satu restaurant
+    1. Buka halaman favorite
+    2. Menampilkan tidak ada restoran favorit
+    3. Buka halaman home
+    4. Pilih restaurant pertama
+    5. Klik judul restaurant
+    6. Menampilkan halaman detile
+    7. Klik tombol menyukai restaurant
+    8. Buka halaman favorite
+    9. Menampilkan restaurant yang disukai
+
+Scenario batal menyukai satu restaurant
+    1. Buka halaman favorite
+    2. Menampilkan tidak ada restoran favorit
+    3. Buka halaman home
+    4. Pilih restaurant pertama
+    5. Klik judul restaurant
+    6. Menampilkan halaman detail
+    7. Klik tombol menyukai restaurant
+    8. Buka halaman favorite
+    9. Menampilkan restaurant yang disukai
+    10. Pilih restaurant pertama yg disukai
+    11. Klik judul restaurant
+    12. Menampilkan halaman detail
+    13. Klik tombol batal menyukai restaurant
+    14. Buka halaman favorite
+    15. Menampilkan tidak ada restaurant favorit

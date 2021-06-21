@@ -1,0 +1,53 @@
+/* Animations */
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-left {
+    0%,
+    10% {
+        transform: scale(1) translateX(0);
+    }
+    15% {
+        transform: scale(0.8) translateX(-14px);
+    }
+    40%,
+    60% {
+        transform: scale(1) translateX(-25px);
+    }
+    75% {
+        transform: scale(1.2) translateX(-14px);
+    }
+    90%,
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}
+@keyframes move-right {
+    0%,
+    10% {
+        transform: scale(1) translateX(0);
+    }
+    15% {
+        transform: scale(1.2) translateX(14px);
+    }
+    40%,
+    60% {
+        transform: scale(1) translateX(25px);
+    }
+    75% {
+        transform: scale(0.8) translateX(14px);
+    }
+    90%,
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}

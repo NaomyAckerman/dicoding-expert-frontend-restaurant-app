@@ -1,0 +1,139 @@
+/* like */
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff7171;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Loader */
+.loader {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    overflow: visible;
+}
+
+.gold,
+.black {
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+    transform-origin: 50% 50%;
+    margin: 0 2px;
+}
+.gold {
+    background-color: #a59227;
+    mix-blend-mode: multiply;
+    animation: move-left 1s ease-in-out infinite;
+}
+.black {
+    background-color: rgb(41, 41, 40);
+    mix-blend-mode: multiply;
+    animation: move-right 1s ease-in-out infinite;
+}
+
+/* Alert */
+.alert {
+    position: fixed;
+    z-index: 9999;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transform: translateY(100px);
+    box-shadow: rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+.alert-success {
+    color: white;
+    background-color: #71ff89;
+}
+.alert-error {
+    color: white;
+    background-color: #ff7171;
+}
+.show {
+    transform: translateY(0);
+}
+
+/* Error */
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.error__type {
+    font-size: 30vmin;
+}
+
+.error__title {
+    margin: 0.5em 0;
+    font-size: 6vmin;
+    font-weight: lighter;
+}
+
+.error__description {
+    width: 90%;
+    font-size: 3.5vmin;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.error__back {
+    min-height: 44px;
+    min-width: 44px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 24px;
+    text-align: center;
+    cursor: pointer;
+    padding: 14px 22px;
+    color: #b9a94e;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(41, 41, 40);
+    transition: opacity 0.3s;
+}
+
+.error__back:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+/* Skip To Content */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #212121;
+    color: white;
+    padding: 8px;
+    z-index: 20;
+    text-decoration: none;
+    min-height: 0;
+    min-width: 0;
+    height: fit-content;
+    width: fit-content;
+}
+.skip-link:focus {
+    top: 5px;
+    left: 5px;
+}

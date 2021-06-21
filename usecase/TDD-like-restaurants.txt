@@ -1,0 +1,23 @@
+Scenario menyukai restaurant
+
+(+) Positif
+1. Restaurant belum disukai
+2. Tampilkan icon untuk menyukai (Berbentuk hati kosong)
+3. Icon menyukai ditekan oleh pengguna
+4. Restaurant ditambah kedaftar favorite
+    (-) Negatif
+    1. Ternyata restaurant sudah disukai
+        - tidak perlu menambahkan kedaftar favorite
+    2. Data tidak memiliki Id
+        - tidak perlu menambahkan kedaftar favorite
+        - sistem tidak gagal
+
+Scenario batal menyukai restaurant
+
+(+) Positif
+1. Restaurant sudah disukai
+2. Tampilkan icon untuk batal menyukai (Berbentuk hati penuh)
+3. Icon batal menyukai ditekan oleh pengguna
+4. Restaurant dihapus dri kedaftar favorite
+    (-) Negatif
+    1. Ternyata restaurant tidak ada dalam daftar favorite
